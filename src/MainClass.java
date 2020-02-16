@@ -1,5 +1,14 @@
+import java.util.Scanner;
 public class MainClass {
     public static void main(String[] args) {
-        System.out.println("Hello, world!");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("byte=");
+        byte inc = scan.nextByte();
+        System.out.println(inc);
+
+
+
+
+
     }
 }
