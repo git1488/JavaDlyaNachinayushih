@@ -9,26 +9,17 @@ public class number_7 {
         // Если переменная отличается от констант, нужно вывести оповещение "Такой константы нет!"
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("number: \n");
+        System.out.println("number: ");
         int number = scan.nextInt();
 
-        final int X=1;
-        final int Y=2;
-        final int Z=3;
+        final int X = 1;
+        final int Y = 2;
+        final int Z = 3;
 
-        switch (number){
-            case X:
-                System.out.println("Данное значение имеется в константах");
-                break;
-            case Y:
-                System.out.println("Данное значение имеется в константах");
-                break;
-            case Z:
-                System.out.println("Данное значение имеется в константах");
-                break;
-            default:
-                System.out.println("Такой константы нет!");
-                break;
-        }
+        if (number == X || number == Y || number == Z){
+            System.out.println("Данное значение имеется в константах");
+        } else System.out.println("Такой константы нет!");
+
+        scan.close();
     }
 }

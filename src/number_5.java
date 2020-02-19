@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class number_5 {
 
-    public static void recursion(int ii, int xx) {
-        ii++;
-        if (ii<=10){
-            System.out.printf("%d x %d = %d \n", ii, xx, ii*xx);
-            recursion(ii, xx);
+    private static void recursion(int i, int number) {
+        i++;
+        if (i <= 10){
+            System.out.println(i + " x " + number + " = " + i * number);
+            recursion(i, number);
         }
     }
 
@@ -15,11 +15,12 @@ public class number_5 {
         //Необходимо вывести на экран таблицу умножения от 1 до 10 для введённого пользователем любого числа.
         // Использовать циклы запрещено.
         Scanner scan = new Scanner(System.in);
-        System.out.println("Число: \n");
-        int x = scan.nextByte();
-        int i = 0;
-        recursion(i, x);
-    }
+        System.out.println("Число: ");
+        int number = scan.nextInt();
 
+        recursion(0, number);
+
+        scan.close();
+    }
 
 }
