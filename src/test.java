@@ -3,7 +3,13 @@ import java.util.Scanner;
 public class test {
     public static void main(String[] args) {
 
+        char[] charArray = {'1', 'f'};
+        String str = new String(charArray);
+        String s = "Я стану отличным программистом!";
 
+        System.out.print(charArray.length);
+        System.out.print(s.length());
+/**
         double[] myArray={1.9, 2.9, 3.4, 3.5};
         double total=0;
         for (int i=0;i<myArray.length;i++){
@@ -45,6 +51,6 @@ public class test {
             System.out.print("\n");
         }
 
-
+**/
     }
 }
