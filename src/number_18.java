@@ -39,6 +39,5 @@ public class number_18 {
             ex.printStackTrace();
         }
 
-        //br.close(); WTF
     }
 }

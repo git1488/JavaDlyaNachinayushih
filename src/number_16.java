@@ -19,6 +19,5 @@ public class number_16 {
             ex.printStackTrace();
         }
 
-        //br.close(); WTF
     }
 }
